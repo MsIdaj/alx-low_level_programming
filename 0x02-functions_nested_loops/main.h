@@ -14,4 +14,3 @@ void print_times_table(int n);
 int main(void)
 int main(void)
 int main(void)
-int main(void)
