@@ -15,4 +15,3 @@ int main(void)
 int main(void)
 int main(void)
 int main(void)
-int print_last_digit(int);
