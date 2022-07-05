@@ -1,21 +1,17 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_last_digit - prints last digit of integer input
- * @n: integer to modify
- *
- * Return: l
+ * print_last_digit - prints the last digit of a number
+ *@n: number being tested
+ * Return: Always 0.
  */
-
 
 int print_last_digit(int n)
 {
-	int l, p;
+	n = n % 10;
 
-	l = n % 10;
-	if (l <  0)
-		l = -l;
-	p = '0' + l;
-	_putchar(p);
-	return (l);
+	if (n < 0)
+		n = -n;
+		_putchar(n + '0');
+		return (n);
 }
