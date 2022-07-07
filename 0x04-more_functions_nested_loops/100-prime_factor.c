@@ -1,28 +1,20 @@
-#include "main.h"
+#include <math.h>
+#include <stdio.h>
 /**
- *print_triangle - prints triangle
- *@size: define the size of function
- *Return: nothing
+ *main - main block
+ *Return: 0
  */
-void print_triangle(int size)
-{
-int x;
-int y;
 
-if (size > 0)
+int main(void)
 {
-for (x = 1; x <= size; x++)
+long int a = 612852475143;
+int x;
+
+for (x = 3; x <= sqrt(a); x++)
 {
-for (y = 1; y <= size; y++)
-{
-if (y <= size - x)
-_putchar(' ');
-else
-_putchar('#');
+if (a % x == 0)
+a = a / x;
 }
-_putchar('\n');
-}
-}
-else
-_putchar('\n');
+printf("%li\n", a);
+return (0);
 }
